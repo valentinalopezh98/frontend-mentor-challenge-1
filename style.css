@@ -1,0 +1,126 @@
+:root {
+    --primary-bright-orange: hsl(31, 77%, 52%);
+    --primary-Dark-cyan: hsl(184, 100%, 22%);;
+    --primary-Very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    margin: 40px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.border-container {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card {
+    width: 320px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.first-card {
+    background-color: var(--primary-bright-orange);
+}
+
+.second-card {
+    background-color: var(--primary-Dark-cyan);
+}
+
+.third-card {
+    background-color: var(--primary-Very-dark-cyan);
+}
+
+.icon{
+    width: 55px;
+    height: auto;
+}
+
+.icon img {
+    width: 100%;
+}
+.title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: var(--background-headings-buttons);
+    margin-bottom: 10px;
+}
+
+.paragraph {
+    font-size: 15px;
+    color: var(--paragraphs);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
+    background-color: var(--background-headings-buttons);
+    border: 2px solid var(--background-headings-buttons);
+    border-radius: 60px;
+    width: 140px;
+    height: 45px;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: var(--background-headings-buttons)
+}
+
+.first-button {
+    color: var(--primary-bright-orange);
+}
+
+.second-button {
+    color: var(--primary-Dark-cyan);
+}
+
+.third-button {
+    color: var(--primary-Very-dark-cyan);
+}
+
+.first-button:hover {
+    background-color: var(--primary-bright-orange);
+}
+
+.second-button:hover {
+    background-color: var(--primary-Dark-cyan);
+}
+
+.third-button:hover {
+    background-color: var(--primary-Very-dark-cyan);
+}
+
+@media (min-width: 1279px) {
+    .container {
+        height: 100vh;
+        margin: 0;
+    }
+
+    .border-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
